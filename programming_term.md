@@ -22,3 +22,7 @@ external behavior는 바꾸지 않고 코드를 재구성하는 것이다.
 
 imperative programming. 프로그램의 상태와 생태를 변경시키는 구문의 관점에서 연산을 설명하는 프로그래밍 패러다임이다.
 
+## Software Deployment
+
+deployment는 소프트웨어를 사용할 수 있게 해주는 모든 행위를 일컫는다. 예를 들어, release, install and activate, update 등이 있다.
+
