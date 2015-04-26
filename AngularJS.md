@@ -1,4 +1,4 @@
-[AngularJS Tutorial](http://www.w3schools.com/angular/)
+http://www.w3schools.com/angular/
 
 AngularJS is a JavaScript framework.
 
