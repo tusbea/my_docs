@@ -114,5 +114,14 @@ remote repo를 추가/제거하는 명령어는 다음과 같다.
 git remote add origin git@github.com:swsnu/FAW.git
 git remote remove origin
 ```
+## git commit
+
+다음 명령어로 commit 메시지를 수정할 수 있다. 하지만 수정 후에 push할 경우 에러가 발생하는데 이 때에는 그 아래의 명령어처럼 `--force` 옵션을 붙여서 push를 수행한다.
+
+```sh
+git commit --amend
+git push --force origin master
+```
+
 
 
