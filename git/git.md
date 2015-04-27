@@ -106,3 +106,13 @@ commit할 때 추가한 파일/디렉터리를 같이 보여준다.
 git log --name-status
 ```
 
+## git remote
+
+remote repo를 추가/제거하는 명령어는 다음과 같다.
+
+```sh
+git remote add origin git@github.com:swsnu/FAW.git
+git remote remove origin
+```
+
+
