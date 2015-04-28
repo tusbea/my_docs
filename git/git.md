@@ -49,6 +49,12 @@ git checkout master		# master 브랜치로 돌아온다
 git checkout 8553f2		# commit 해시의 앞 6자리를 적어주면 해당  commit으로 이동한다.
 ~~~
 
+또한 `git checkout`를 통해 특정 파일을 이전 commit 상태로 되돌릴 수 있다.
+
+```sh
+git checkout -- main.c
+```
+
 ## git merge
 
 다음 명령은 `topic` 브랜치는 그대로이고, `master` 브랜치만 `topic`과 merge되고 `master` 브랜치는 merge된 결과의 최신 commit을 가리킨다.
@@ -123,5 +129,20 @@ git commit --amend
 git push --force origin master
 ```
 
+## git rm
+
+파일은 삭제하지 않고 추적만 중지하고 싶다면 `--cached` 옵션을 붙인다. 만약 파일까지 삭제하려면 옵션을 빼고 실행한다.
+
+```sh
+git rm --cached .DS_Store
+```
+
+## git push
+
+remote와 branch를 기억하려면 `-u` 옵션을 사용한다.
+
+```sh
+git push -u origin master
+```
 
 
