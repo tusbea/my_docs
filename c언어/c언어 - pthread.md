@@ -11,6 +11,8 @@ array를 데이터로 받아 double 변수 리턴한다.
 array 변수를 인자로 전달하면 call by ref이기 때문에 다른 쓰레드 생성시 같은 array 변수를 사용하게 되면 주의해야 한다.
 
 ```c
+#include <pthread.h>
+
 void *f(void *data)
 {
   int *arr = (int *)data;

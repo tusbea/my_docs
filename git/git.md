@@ -37,9 +37,6 @@ git checkout topic
 git rebase master
 ~~~
 
-## git pull
-
-`git pull` : `git fetch` + `git merge`
 
 ## git checkout
 
@@ -72,6 +69,19 @@ git branch -r	# remote 브랜치
 git branch -a	# local & remote 브랜치
 ```
 
+브랜치를 삭제하려면 `-d` 또는 `-D` 옵션을 사용한다.
+
+```sh
+$ git branch -d <branch>
+$ git branch -D <branch>		# <branch>가 merge되지 않은 경우 -d 옵션으로는 삭제할 수 없다. 이 때 -D 사용
+```
+
+브랜치 이름을 변경하려면 `-m` 옵션을 사용한다.
+
+```sh
+$ git branch -m <old-branch> <new-branch>
+```
+
 ## git fetch
 
 fetching은 local branch에는 영향을 주지 않는다. fetch된 commit은 remote branch의 뒤에 붙는다.  
@@ -86,6 +96,8 @@ remote branch는 다른 사람의 commit이 담긴 branch이다.
 remote branch는 read-only 브랜치로 생각할 수 있다.
 
 ## git pull
+
+`git pull` : `git fetch` + `git merge`
 
 ```sh
 git pull origin master
@@ -145,4 +157,8 @@ remote와 branch를 기억하려면 `-u` 옵션을 사용한다.
 git push -u origin master
 ```
 
+```sh
+$ git config --global push.default simple	# 현재 브랜치만 push
+$ git config --global push.default matching	# 로컬의 브랜치 중 remote와 일치하는 모든 브랜치 push
+```
 
